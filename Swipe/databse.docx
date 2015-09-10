@@ -1,0 +1,72 @@
+﻿
+
+1 . We are looking to develop an app, similar to the swipe left/swipe (like/unlike) right functionality as Tinder. 
+
+2. However, instead of photos, submitters post 30 sec clips where users can like on not like the submission.
+
+3 . Needs to have the ability of posting comments about the video. 
+
+4. Users need to login with Facebook account or email address.
+
+5. This app will record the likes submitted and can display a top ten list of top videos.
+
+6. This app is geared toward talent videos and will eventually work as a contest with a reward.
+
+7. Submitters should be able to build their profile and link their Twitter, FB, website and bio
+
+Premise: Tinder like app with swipe left/right feature that displays 30 sec videos of people posting their talent (singing, dancing, etc)
+
+
+Algorithm for maximizing number of swipes
+Import you tube, Dropbox, Vimeo, upload from device. Link to limit resources. 
+Check link to video as active before it gets removed
+Premium 25% more views. FEATURED $50
+Follow Feature
+Profile
+-name, age, sex, Fb interests, Instagram photo feed, profile, Fb address, Instagram, Twitter, website
+-make public video feed for profile.
+Search for user feature: retrieve profile
+Trim video to 30 sec or less
+Limit voting to once/video/user
+Push notifications
+Tag Favorite submitters and videos
+View list of favorite submitters and videos
+On each video, option to share on email, sms, Fb, Twitter, etc
+
+Thanks!
+
+
+
+
+
+
+
+
+
+
+
+
+Database : 
+
+				  Database (trigmaus_dev4db104)
+						|
+						|1__________2___________3___________4___________5______________6_____________
+|		|		|		       |
+|		|		|		       |
+|		|		|		       |
+|		|		|		       |
+Likes	     Comment	    	FavoriteUser       FavoriteVideo
+|		|		|		       |
+->id		->id		->id		       ->id
+|		|		|		       |
+->video_id	->video_id	->user_id	       ->user_id
+|		|		|		       |
+->user_id	->user_id	->favorite_user_id ->video_id
+|		|		|                              |
+-> date		->comment	->date                     ->date
+|		|							
+->status	->date
+		|
+		->status
+
+
